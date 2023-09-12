@@ -40,6 +40,7 @@ def main(task_name: str, **kwargs):
             batch_size=1,
             no_cache=True,
             device="0",
+            **kwargs,
         )
         print(evaluator.make_table(results))
         return
